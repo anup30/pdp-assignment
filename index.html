@@ -29,16 +29,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto"> <!-- ms-auto -->
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Products</a>
+						<a class="nav-link" href="#products">Products</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Support</a>
+						<a class="nav-link" href="#support">Support</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Cart</a>
+						<a class="nav-link" href="#cart">Cart</a>
 					</li>
 				</ul>				
 			</div>
@@ -47,12 +47,12 @@
 	</header>
 	<!-- Main Sections -->
 	<main>
-		<section class="container text-center"> <!-- text-center, mx-auto, justify-content-center -->
+		<section id="home" class="container text-center"> <!-- text-center, mx-auto, justify-content-center -->
 			<p class="display-2">👨‍💻 BD-Techie</p> <!-- display 1 to 6 -->
 			<p class="fs-6 fw-semibold fst-italic">All your tech needs in one place!</p>  <!-- fs 1 to 6, font size -->
 		</section>
 		<section class="container mt-6" style="margin-top: calc(var(--minsize)*0.03);">
-			<div class="row">
+			<div id="products" class="row">
 				<!-- carousel column -->
 				<div class="col-md-5"> <!-- removed:  border-primary -->
 					<div id="carouselExampleIndicators" class="carousel slide">
@@ -98,7 +98,7 @@
 						<div class="col-12 col-sm-6 d-flex justify-content-center align-items-center my-3">
 							<h5 class="text-secondary">Unit Price: $500</h5>
 						</div>
-						<div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center my-1"> <!-- mx-auto, text-center justify-content-center align-items-center-->
+						<div id="cart" class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center my-1"> <!-- mx-auto, text-center justify-content-center align-items-center-->
 							<div class="input-group justify-content-center align-items-center">
 								<button id="decrement" class="btn btn-outline-secondary"  onclick="decrement()">-</button>
 								<h5 id="counting" class="text-secondary px-2">1</h5>
@@ -177,7 +177,7 @@
 		</section>
 	</main>
 	<!-- footer -->
-	<footer class="bg-dark" style="margin-top: calc(var(--minsize)*0.07);"> <!-- custom extra spacing, more than mt-6 -->
+	<footer id="support" class="bg-dark" style="margin-top: calc(var(--minsize)*0.07);"> <!-- custom extra spacing, more than mt-6 -->
 		<div class="container-fluid text-center py-4">
 			<div class="mb-3">
 				<a href="#" class="me-3"><i class="fa-brands fa-facebook-f fa-2x"></i></i></a>
