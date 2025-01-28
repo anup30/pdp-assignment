@@ -1,0 +1,15 @@
+	:root{
+		--minsize: calc(min(100vh, 100vw));
+	}
+	/* Custom CSS to change carousel button color */
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		background-color: skyblue; /* Change to your desired color */
+		border-radius: 50%; /* Make the buttons circular */
+		padding: 10px; /* Adjust size */
+	}
+	/* Change hover effect */
+	.carousel-control-prev-icon:hover,
+	.carousel-control-next-icon:hover {
+		background-color: steelblue; /* Darker shade for hover */
+	}
